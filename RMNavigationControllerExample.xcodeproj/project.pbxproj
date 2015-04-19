@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		76DD32251AE437F300AF21A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DD32241AE437F300AF21A0 /* main.m */; };
-		76DD32281AE437F300AF21A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DD32271AE437F300AF21A0 /* AppDelegate.m */; };
-		76DD322B1AE437F300AF21A0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DD322A1AE437F300AF21A0 /* ViewController.m */; };
-		76DD322E1AE437F300AF21A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76DD322C1AE437F300AF21A0 /* Main.storyboard */; };
 		76DD32301AE437F300AF21A0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76DD322F1AE437F300AF21A0 /* Images.xcassets */; };
 		76DD32331AE437F300AF21A0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76DD32311AE437F300AF21A0 /* LaunchScreen.xib */; };
 		76DD323F1AE437F400AF21A0 /* RMNavigationControllerExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DD323E1AE437F400AF21A0 /* RMNavigationControllerExampleTests.m */; };
+		76DD324D1AE4380E00AF21A0 /* car.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 76DD32481AE4380E00AF21A0 /* car.jpg */; };
+		76DD324E1AE4380E00AF21A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DD324A1AE4380E00AF21A0 /* AppDelegate.m */; };
+		76DD324F1AE4380E00AF21A0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DD324C1AE4380E00AF21A0 /* ViewController.m */; };
+		76DD32561AE4381700AF21A0 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DD32511AE4381700AF21A0 /* DetailViewController.m */; };
+		76DD32571AE4381700AF21A0 /* RMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DD32531AE4381700AF21A0 /* RMViewController.m */; };
+		76DD325C1AE4386500AF21A0 /* RMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DD325B1AE4386500AF21A0 /* RMNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,16 +33,22 @@
 		76DD321F1AE437F300AF21A0 /* RMNavigationControllerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RMNavigationControllerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76DD32231AE437F300AF21A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76DD32241AE437F300AF21A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		76DD32261AE437F300AF21A0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		76DD32271AE437F300AF21A0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		76DD32291AE437F300AF21A0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		76DD322A1AE437F300AF21A0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		76DD322D1AE437F300AF21A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		76DD322F1AE437F300AF21A0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		76DD32321AE437F300AF21A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		76DD32381AE437F400AF21A0 /* RMNavigationControllerExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RMNavigationControllerExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76DD323D1AE437F400AF21A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76DD323E1AE437F400AF21A0 /* RMNavigationControllerExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMNavigationControllerExampleTests.m; sourceTree = "<group>"; };
+		76DD32481AE4380E00AF21A0 /* car.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = car.jpg; sourceTree = "<group>"; };
+		76DD32491AE4380E00AF21A0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		76DD324A1AE4380E00AF21A0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		76DD324B1AE4380E00AF21A0 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		76DD324C1AE4380E00AF21A0 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		76DD32501AE4381700AF21A0 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		76DD32511AE4381700AF21A0 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		76DD32521AE4381700AF21A0 /* RMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMViewController.h; sourceTree = "<group>"; };
+		76DD32531AE4381700AF21A0 /* RMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMViewController.m; sourceTree = "<group>"; };
+		76DD325A1AE4386500AF21A0 /* RMNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMNavigationController.h; sourceTree = "<group>"; };
+		76DD325B1AE4386500AF21A0 /* RMNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +72,7 @@
 		76DD32161AE437F300AF21A0 = {
 			isa = PBXGroup;
 			children = (
+				76DD32591AE4386500AF21A0 /* RMNavigationController */,
 				76DD32211AE437F300AF21A0 /* RMNavigationControllerExample */,
 				76DD323B1AE437F400AF21A0 /* RMNavigationControllerExampleTests */,
 				76DD32201AE437F300AF21A0 /* Products */,
@@ -81,11 +91,15 @@
 		76DD32211AE437F300AF21A0 /* RMNavigationControllerExample */ = {
 			isa = PBXGroup;
 			children = (
-				76DD32261AE437F300AF21A0 /* AppDelegate.h */,
-				76DD32271AE437F300AF21A0 /* AppDelegate.m */,
-				76DD32291AE437F300AF21A0 /* ViewController.h */,
-				76DD322A1AE437F300AF21A0 /* ViewController.m */,
-				76DD322C1AE437F300AF21A0 /* Main.storyboard */,
+				76DD32501AE4381700AF21A0 /* DetailViewController.h */,
+				76DD32511AE4381700AF21A0 /* DetailViewController.m */,
+				76DD32521AE4381700AF21A0 /* RMViewController.h */,
+				76DD32531AE4381700AF21A0 /* RMViewController.m */,
+				76DD32481AE4380E00AF21A0 /* car.jpg */,
+				76DD32491AE4380E00AF21A0 /* AppDelegate.h */,
+				76DD324A1AE4380E00AF21A0 /* AppDelegate.m */,
+				76DD324B1AE4380E00AF21A0 /* ViewController.h */,
+				76DD324C1AE4380E00AF21A0 /* ViewController.m */,
 				76DD322F1AE437F300AF21A0 /* Images.xcassets */,
 				76DD32311AE437F300AF21A0 /* LaunchScreen.xib */,
 				76DD32221AE437F300AF21A0 /* Supporting Files */,
@@ -117,6 +131,15 @@
 				76DD323D1AE437F400AF21A0 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		76DD32591AE4386500AF21A0 /* RMNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				76DD325A1AE4386500AF21A0 /* RMNavigationController.h */,
+				76DD325B1AE4386500AF21A0 /* RMNavigationController.m */,
+			);
+			path = RMNavigationController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76DD322E1AE437F300AF21A0 /* Main.storyboard in Resources */,
+				76DD324D1AE4380E00AF21A0 /* car.jpg in Resources */,
 				76DD32331AE437F300AF21A0 /* LaunchScreen.xib in Resources */,
 				76DD32301AE437F300AF21A0 /* Images.xcassets in Resources */,
 			);
@@ -219,9 +242,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76DD322B1AE437F300AF21A0 /* ViewController.m in Sources */,
-				76DD32281AE437F300AF21A0 /* AppDelegate.m in Sources */,
+				76DD325C1AE4386500AF21A0 /* RMNavigationController.m in Sources */,
+				76DD32571AE4381700AF21A0 /* RMViewController.m in Sources */,
+				76DD324F1AE4380E00AF21A0 /* ViewController.m in Sources */,
+				76DD324E1AE4380E00AF21A0 /* AppDelegate.m in Sources */,
 				76DD32251AE437F300AF21A0 /* main.m in Sources */,
+				76DD32561AE4381700AF21A0 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,14 +270,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		76DD322C1AE437F300AF21A0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				76DD322D1AE437F300AF21A0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		76DD32311AE437F300AF21A0 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

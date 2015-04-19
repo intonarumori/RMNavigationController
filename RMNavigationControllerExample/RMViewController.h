@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  RMViewController.h
 //  NavigationBarTest
 //
 //  Created by Daniel Langh on 17/04/2015.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UITableViewController
+@interface RMViewController : UIViewController
 
+- (UINavigationItem *)translucentNavigationItem;
 
 @end
-

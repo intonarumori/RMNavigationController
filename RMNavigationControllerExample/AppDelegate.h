@@ -1,9 +1,9 @@
 //
 //  AppDelegate.h
-//  RMNavigationControllerExample
+//  NavigationBarTest
 //
-//  Created by Daniel Langh on 19/04/2015.
-//  Copyright (c) 2015 rumori. All rights reserved.
+//  Created by Daniel Langh on 17/04/2015.
+//  Copyright (c) 2015 Daniel Langh. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
