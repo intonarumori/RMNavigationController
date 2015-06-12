@@ -12,6 +12,7 @@
 
 @optional
 - (BOOL)hidesNavigationBar;
+- (BOOL)extendsNavigationBar;
 
 @end
 

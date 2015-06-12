@@ -17,6 +17,8 @@
 		76DD32561AE4381700AF21A0 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DD32511AE4381700AF21A0 /* DetailViewController.m */; };
 		76DD32571AE4381700AF21A0 /* RMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DD32531AE4381700AF21A0 /* RMViewController.m */; };
 		76DD325C1AE4386500AF21A0 /* RMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DD325B1AE4386500AF21A0 /* RMNavigationController.m */; };
+		76DFB7221B2A5CD2000662A8 /* White@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76DFB7211B2A5CD2000662A8 /* White@2x.png */; };
+		76DFB7251B2A5D52000662A8 /* Detail2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DFB7241B2A5D52000662A8 /* Detail2ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,9 @@
 		76DD32531AE4381700AF21A0 /* RMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMViewController.m; sourceTree = "<group>"; };
 		76DD325A1AE4386500AF21A0 /* RMNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMNavigationController.h; sourceTree = "<group>"; };
 		76DD325B1AE4386500AF21A0 /* RMNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMNavigationController.m; sourceTree = "<group>"; };
+		76DFB7211B2A5CD2000662A8 /* White@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "White@2x.png"; sourceTree = "<group>"; };
+		76DFB7231B2A5D52000662A8 /* Detail2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Detail2ViewController.h; sourceTree = "<group>"; };
+		76DFB7241B2A5D52000662A8 /* Detail2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Detail2ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +96,7 @@
 		76DD32211AE437F300AF21A0 /* RMNavigationControllerExample */ = {
 			isa = PBXGroup;
 			children = (
+				76DFB7211B2A5CD2000662A8 /* White@2x.png */,
 				76DD32501AE4381700AF21A0 /* DetailViewController.h */,
 				76DD32511AE4381700AF21A0 /* DetailViewController.m */,
 				76DD32521AE4381700AF21A0 /* RMViewController.h */,
@@ -103,6 +109,8 @@
 				76DD322F1AE437F300AF21A0 /* Images.xcassets */,
 				76DD32311AE437F300AF21A0 /* LaunchScreen.xib */,
 				76DD32221AE437F300AF21A0 /* Supporting Files */,
+				76DFB7231B2A5D52000662A8 /* Detail2ViewController.h */,
+				76DFB7241B2A5D52000662A8 /* Detail2ViewController.m */,
 			);
 			path = RMNavigationControllerExample;
 			sourceTree = "<group>";
@@ -224,6 +232,7 @@
 			files = (
 				76DD324D1AE4380E00AF21A0 /* car.jpg in Resources */,
 				76DD32331AE437F300AF21A0 /* LaunchScreen.xib in Resources */,
+				76DFB7221B2A5CD2000662A8 /* White@2x.png in Resources */,
 				76DD32301AE437F300AF21A0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,6 +254,7 @@
 				76DD325C1AE4386500AF21A0 /* RMNavigationController.m in Sources */,
 				76DD32571AE4381700AF21A0 /* RMViewController.m in Sources */,
 				76DD324F1AE4380E00AF21A0 /* ViewController.m in Sources */,
+				76DFB7251B2A5D52000662A8 /* Detail2ViewController.m in Sources */,
 				76DD324E1AE4380E00AF21A0 /* AppDelegate.m in Sources */,
 				76DD32251AE437F300AF21A0 /* main.m in Sources */,
 				76DD32561AE4381700AF21A0 /* DetailViewController.m in Sources */,
@@ -432,6 +442,7 @@
 				76DD32441AE437F400AF21A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		76DD32451AE437F400AF21A0 /* Build configuration list for PBXNativeTarget "RMNavigationControllerExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +451,7 @@
 				76DD32471AE437F400AF21A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

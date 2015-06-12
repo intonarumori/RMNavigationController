@@ -25,6 +25,7 @@
 
     ViewController *vc = [ViewController new];
     UINavigationController *nvc = [[RMNavigationController alloc] initWithRootViewController:vc];
+    [nvc.navigationBar setBackgroundImage:[UIImage imageNamed:@"White"] forBarMetrics:UIBarMetricsDefault];
     self.window.rootViewController = nvc;
     
     [self.window makeKeyAndVisible];

@@ -154,6 +154,11 @@
     return YES;
 }
 
+- (BOOL)extendsNavigationBar
+{
+    return YES;
+}
+
 #pragma mark -
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView

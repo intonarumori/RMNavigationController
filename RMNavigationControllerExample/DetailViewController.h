@@ -15,5 +15,6 @@
 @property (nonatomic) UITableView *tableView;
 
 - (BOOL)hidesNavigationBar;
+- (BOOL)extendsNavigationBar;
 
 @end
