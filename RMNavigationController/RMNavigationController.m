@@ -58,14 +58,23 @@
     
     if(_replacementShadowImage == nil) _replacementShadowImage = [UIImage new];
 
+    
     UIImage *currentShadowImage = [self.navigationBar shadowImage];
+    UIImage *backgroundImage = [self.navigationBar backgroundImageForBarMetrics:UIBarMetricsDefault];
     
     if(shouldHideShadowImage)
     {
-        if(currentShadowImage != _replacementShadowImage)
+        if(backgroundImage == nil)
         {
-            self.originalShadowImage = currentShadowImage;
-            [self.navigationBar setShadowImage:_replacementShadowImage];
+            NSLog(@"Warning: you should set a background image before extending navigation bars, so the Shadow image can be hidden.");
+        }
+        else
+        {
+            if(currentShadowImage != _replacementShadowImage)
+            {
+                self.originalShadowImage = currentShadowImage;
+                [self.navigationBar setShadowImage:_replacementShadowImage];
+            }
         }
     }
     else
