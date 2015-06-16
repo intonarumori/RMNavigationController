@@ -136,6 +136,15 @@
     [self.navigationBar setBackgroundImage:style.backgroundImage forBarMetrics:UIBarMetricsDefault];
     [self.navigationBar setShadowImage: hideShadowImage ? [UIImage new] : style.shadowImage];
     [self.navigationBar setTintColor:style.tintColor];
+    
+    [self setNeedsStatusBarAppearanceUpdate];
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    if(self.topViewController && [self.topViewController respondsToSelector:@selector(preferredStatusBarStyle)])
+        return [self.topViewController preferredStatusBarStyle];
+    return UIStatusBarStyleDefault;
 }
 
 - (void)setNavigationBarHidden:(BOOL)hidden animated:(BOOL)animated
