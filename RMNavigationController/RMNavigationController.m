@@ -62,6 +62,27 @@
     return vc;
 }
 
+- (void)setViewControllers:(NSArray *)viewControllers animated:(BOOL)animated
+{
+    [super setViewControllers:viewControllers animated:animated];
+    [self updateNavigationBarStyle];
+}
+
+- (NSArray *)popToViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    NSArray *viewControllers = [super popToViewController:viewController animated:animated];
+    [self updateNavigationBarStyle];
+    return viewControllers;
+}
+- (NSArray *)popToRootViewControllerAnimated:(BOOL)animated
+{
+    NSArray *viewControllers = [super popToRootViewControllerAnimated:animated];
+    [self updateNavigationBarStyle];
+    return viewControllers;
+}
+
+#pragma mark -
+
 - (void)updateNavigationBarHiddenWithViewController:(UIViewController *)viewController
                                            animated:(BOOL)animated
 {
