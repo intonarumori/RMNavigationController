@@ -24,7 +24,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
     ViewController *vc = [ViewController new];
-    UINavigationController *nvc = [[RMNavigationController alloc] initWithRootViewController:vc];
+    RMNavigationController *nvc = [[RMNavigationController alloc] initWithRootViewController:vc];
+    nvc.defaultNavigationBarStyle = [[RMNavigationBarStyle alloc] initWithTranslucent:NO backgroundColor:[UIColor redColor] shadowImage:nil backgroundImage:[UIImage imageNamed:@"White"] titleTextAttributes:@{NSForegroundColorAttributeName:[UIColor redColor]}];
     [nvc.navigationBar setBackgroundImage:[UIImage imageNamed:@"White"] forBarMetrics:UIBarMetricsDefault];
     self.window.rootViewController = nvc;
     

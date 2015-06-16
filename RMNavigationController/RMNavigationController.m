@@ -8,10 +8,33 @@
 
 #import "RMNavigationController.h"
 
-@interface RMNavigationController ()
 
-@property (nonatomic) UIImage *originalShadowImage;
-@property (nonatomic) UIImage *replacementShadowImage;
+@implementation RMNavigationBarStyle
+
+- (instancetype)initWithTranslucent:(BOOL)translucent
+                    backgroundColor:(UIColor *)backgroundColor
+                        shadowImage:(UIImage *)shadowImage
+                    backgroundImage:(UIImage *)backgroundImage
+                titleTextAttributes:(NSDictionary *)titleTextAttributes
+{
+    self = [super init];
+    if(self)
+    {
+        self.titleTextAttributes = titleTextAttributes;
+        self.translucent = translucent;
+        self.backgroundImage = backgroundImage;
+        self.backgroundColor = backgroundColor;
+        self.shadowImage = shadowImage;
+    }
+    return self;
+}
+
+@end
+
+
+#pragma mark -
+
+@interface RMNavigationController ()
 
 @end
 
@@ -22,6 +45,12 @@
     [super pushViewController:viewController animated:animated];
 
     [self updateNavigationBarHiddenWithViewController:viewController animated:animated];
+}
+
+- (void)setDefaultNavigationBarStyle:(RMNavigationBarStyle *)defaultNavigationBarStyle
+{
+    _defaultNavigationBarStyle = defaultNavigationBarStyle;
+    [self updateNavigationBarStyle];
 }
 
 - (UIViewController *)popViewControllerAnimated:(BOOL)animated
@@ -56,34 +85,33 @@
     
     BOOL shouldHideShadowImage = extendsNavigationBar;
     
-    if(_replacementShadowImage == nil) _replacementShadowImage = [UIImage new];
+    RMNavigationBarStyle *style = _defaultNavigationBarStyle;
+    if([viewController conformsToProtocol:@protocol(RMNavigationControllerContentViewController)] && [viewController respondsToSelector:@selector(navigationBarStyle)])
+    {
+        style = [(id<RMNavigationControllerContentViewController>)viewController navigationBarStyle];
+    }
+    [self applyNavigationBarStyle:style hideShadowImage:shouldHideShadowImage];
+}
 
-    
-    UIImage *currentShadowImage = [self.navigationBar shadowImage];
-    UIImage *backgroundImage = [self.navigationBar backgroundImageForBarMetrics:UIBarMetricsDefault];
-    
-    if(shouldHideShadowImage)
+- (void)updateNavigationBarStyle
+{
+    RMNavigationBarStyle *style = _defaultNavigationBarStyle;
+    if(self.topViewController)
     {
-        if(backgroundImage == nil)
+        if([self.topViewController conformsToProtocol:@protocol(RMNavigationControllerContentViewController)] && [self.topViewController respondsToSelector:@selector(navigationBarStyle)])
         {
-            NSLog(@"Warning: you should set a background image before extending navigation bars, so the Shadow image can be hidden.");
-        }
-        else
-        {
-            if(currentShadowImage != _replacementShadowImage)
-            {
-                self.originalShadowImage = currentShadowImage;
-                [self.navigationBar setShadowImage:_replacementShadowImage];
-            }
+            style = [(id<RMNavigationControllerContentViewController>)self.topViewController navigationBarStyle];
         }
     }
-    else
-    {
-        if(currentShadowImage != _originalShadowImage)
-        {
-            [self.navigationBar setShadowImage:_originalShadowImage];
-        }
-    }
+    [self applyNavigationBarStyle:style hideShadowImage:NO];
+}
+
+- (void)applyNavigationBarStyle:(RMNavigationBarStyle *)style hideShadowImage:(BOOL)hideShadowImage
+{
+    self.navigationBar.translucent = style.translucent;
+    [self.navigationBar setTitleTextAttributes:style.titleTextAttributes];
+    [self.navigationBar setBackgroundImage:style.backgroundImage forBarMetrics:UIBarMetricsDefault];
+    [self.navigationBar setShadowImage: hideShadowImage ? [UIImage new] : style.shadowImage];
 }
 
 - (void)setNavigationBarHidden:(BOOL)hidden animated:(BOOL)animated

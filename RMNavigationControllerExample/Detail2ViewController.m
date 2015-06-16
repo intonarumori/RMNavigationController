@@ -18,10 +18,12 @@
 {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor redColor];
+    self.title = @"Detail2";
+    
+    self.view.backgroundColor = [UIColor whiteColor];
     
     UIView *navigationBarExtensionView = [[UIView alloc] init];
-    navigationBarExtensionView.backgroundColor = [UIColor whiteColor];
+    navigationBarExtensionView.backgroundColor = [UIColor redColor];
     navigationBarExtensionView.translatesAutoresizingMaskIntoConstraints = NO;
     
     [self.view addSubview:navigationBarExtensionView];
@@ -61,6 +63,13 @@
     Detail2ViewController *vc = [Detail2ViewController new];
     vc.shouldExtendNavigationBar = !self.shouldExtendNavigationBar;
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+
+- (RMNavigationBarStyle *)navigationBarStyle
+{
+    RMNavigationBarStyle *style = [[RMNavigationBarStyle alloc] initWithTranslucent:NO backgroundColor:[UIColor yellowColor] shadowImage:nil backgroundImage:[UIImage imageNamed:@"Red"] titleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    return style;
 }
 
 - (BOOL)extendsNavigationBar
