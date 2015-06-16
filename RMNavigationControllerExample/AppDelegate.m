@@ -25,7 +25,7 @@
 
     ViewController *vc = [ViewController new];
     RMNavigationController *nvc = [[RMNavigationController alloc] initWithRootViewController:vc];
-    nvc.defaultNavigationBarStyle = [[RMNavigationBarStyle alloc] initWithTranslucent:NO backgroundColor:[UIColor redColor] shadowImage:nil backgroundImage:[UIImage imageNamed:@"White"] titleTextAttributes:@{NSForegroundColorAttributeName:[UIColor redColor]}];
+    nvc.defaultNavigationBarStyle = [[RMNavigationBarStyle alloc] initWithTranslucent:NO backgroundColor:[UIColor redColor] shadowImage:nil backgroundImage:[UIImage imageNamed:@"White"] titleTextAttributes:@{NSForegroundColorAttributeName:[UIColor redColor]} tintColor:nil];
     [nvc.navigationBar setBackgroundImage:[UIImage imageNamed:@"White"] forBarMetrics:UIBarMetricsDefault];
     self.window.rootViewController = nvc;
     

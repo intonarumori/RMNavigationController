@@ -68,7 +68,7 @@
 
 - (RMNavigationBarStyle *)navigationBarStyle
 {
-    RMNavigationBarStyle *style = [[RMNavigationBarStyle alloc] initWithTranslucent:NO backgroundColor:[UIColor yellowColor] shadowImage:nil backgroundImage:[UIImage imageNamed:@"Red"] titleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    RMNavigationBarStyle *style = [[RMNavigationBarStyle alloc] initWithTranslucent:NO backgroundColor:[UIColor yellowColor] shadowImage:nil backgroundImage:[UIImage imageNamed:@"Red"] titleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]} tintColor:[UIColor whiteColor]];
     return style;
 }
 

@@ -26,6 +26,7 @@
 
 @property (nonatomic, assign) BOOL translucent;
 @property (nonatomic, strong) UIColor *backgroundColor;
+@property (nonatomic, strong) UIColor *tintColor;
 @property (nonatomic, strong) UIImage *shadowImage;
 @property (nonatomic, strong) UIImage *backgroundImage;
 @property (nonatomic, strong) NSDictionary *titleTextAttributes;
@@ -34,7 +35,8 @@
                     backgroundColor:(UIColor *)backgroundColor
                         shadowImage:(UIImage *)shadowImage
                     backgroundImage:(UIImage *)backgroundImage
-                titleTextAttributes:(NSDictionary *)titleTextAttributes;
+                titleTextAttributes:(NSDictionary *)titleTextAttributes
+                          tintColor:(UIColor *)tintColor;
 
 
 @end

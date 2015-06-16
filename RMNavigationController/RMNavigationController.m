@@ -16,10 +16,12 @@
                         shadowImage:(UIImage *)shadowImage
                     backgroundImage:(UIImage *)backgroundImage
                 titleTextAttributes:(NSDictionary *)titleTextAttributes
+                          tintColor:(UIColor *)tintColor
 {
     self = [super init];
     if(self)
     {
+        self.tintColor = tintColor;
         self.titleTextAttributes = titleTextAttributes;
         self.translucent = translucent;
         self.backgroundImage = backgroundImage;
@@ -112,6 +114,7 @@
     [self.navigationBar setTitleTextAttributes:style.titleTextAttributes];
     [self.navigationBar setBackgroundImage:style.backgroundImage forBarMetrics:UIBarMetricsDefault];
     [self.navigationBar setShadowImage: hideShadowImage ? [UIImage new] : style.shadowImage];
+    [self.navigationBar setTintColor:style.tintColor];
 }
 
 - (void)setNavigationBarHidden:(BOOL)hidden animated:(BOOL)animated
